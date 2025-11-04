@@ -1,0 +1,58 @@
+.hero {
+    background: url(./images/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-bottom: var(--size-xxs);
+    padding-top: var(--size-xxl);
+
+    // border-bottom: var(--size-xxxxs) solid var(--color-main);
+
+    height: 100vh;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__headline {
+        font-size: 5.5vw;
+        margin: 0;
+        margin-top: auto;
+        font-weight: 700;
+        display: flex;
+        flex-direction: column;
+
+        .arrow {
+            width: 5.5vw !important;
+            height: auto !important;
+        }
+
+        .logo {
+            width: 5.5vw !important;
+            height: auto !important;
+        }
+    }
+
+    &__description {
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        gap: var(--size-md);
+        font-size: var(--size-xs);
+        text-transform: uppercase;
+        flex-direction: column;
+
+        @include sm {
+            align-items: end;
+            flex-direction: row;
+        }
+        * {
+            font-weight: 700;
+        }
+
+        .arrow {
+            width: var(--size-xs);
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.registration {
+    &__headline {
+        font-size: var(--size-xs);
+    }
+
+    &__forms {
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-xl);
+
+        @include md {
+            flex-direction: row;
+            gap: var(--size-sm);
+        }
+    }
+}

@@ -1,0 +1,179 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    // padding: var(--size-sm);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: var(--size-sm);
+
+    &__headline {
+        color: var(--color-bright);
+        font-size: var(--size-xl);
+        // margin-bottom: var(--size-sm);
+        font-weight: 700;
+
+        &--description {
+            &::before {
+                content: "[предварительная]";
+                text-transform: uppercase;
+                font-size: var(--size-xs);
+                position: absolute;
+                transform: translateY(calc(var(--size-xxxs) * -1));
+            }
+        }
+    }
+
+    &__description {
+        text-transform: uppercase;
+        font-size: var(--size-sm);
+        color: var(--color-second);
+        line-height: 1.1;
+        font-weight: 700;
+        margin-bottom: var(--size-sm);
+    }
+
+    &__button {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__inputs {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: var(--size-sm);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        &--not-valid:not(.form__item--checkbox) {
+            .form__input {
+                outline: 2px solid var(--color-red);
+                color: var(--color-red);
+                padding-right: var(--size-md);
+            }
+
+            &::after {
+                content: "✕";
+                position: absolute;
+                right: var(--size-xs);
+                bottom: var(--size-xs);
+                color: var(--color-red);
+                font-size: var(--size-sm);
+                font-weight: 600;
+            }
+        }
+
+        &--focused {
+            .form__input {
+                outline: 2px solid var(--color-main) !important;
+            }
+        }
+
+        &--checkbox {
+            display: flex;
+            margin-bottom: var(--size-sm);
+            position: relative;
+            padding-left: var(--size-lg);
+        }
+    }
+
+    &__input {
+        padding: var(--size-sm) var(--size-md);
+        font-size: var(--size-xs);
+        border: 1px solid var(--color-second);
+        border-radius: var(--size-sm);
+        width: 100%;
+        background-color: var(--color-bright);
+        position: relative;
+        color: var(--color-second);
+        transition: all 0.2s ease;
+
+        &:focus {
+            outline: 2px solid var(--color-main);
+        }
+
+        &::placeholder {
+            color: var(--color-second);
+            opacity: 0.7;
+        }
+    }
+
+    &__required {
+        position: absolute;
+        right: var(--size-md);
+        top: var(--size-sm);
+        font-size: var(--size-sm);
+        color: var(--color-second);
+        font-family: "Second", sans-serif;
+        height: var(--size-md);
+
+        img {
+            height: 100%;
+        }
+    }
+
+    &__checkbox {
+        position: absolute;
+        opacity: 0;
+        left: 0;
+
+        & + label {
+            position: relative;
+            cursor: pointer;
+            padding: 0;
+            font-size: var(--size-xs);
+            color: var(--color-bright);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            min-height: var(--size-sm);
+        }
+
+        & + label:before {
+            content: "";
+            position: absolute;
+            left: calc(-1 * var(--size-lg));
+            top: 50%;
+            transform: translateY(-50%);
+            width: var(--size-sm);
+            height: var(--size-sm);
+            border: 1px solid var(--color-grey);
+            border-radius: 10pc;
+            background: var(--color-bright);
+            box-sizing: border-box;
+        }
+
+        &:checked + label:after {
+            content: "";
+            position: absolute;
+            left: calc(-1 * var(--size-lg) + var(--size-xxs) * 0.35);
+            top: 50%;
+            transform: translateY(-50%);
+            width: var(--size-xxs);
+            height: var(--size-xxs);
+            background: var(--color-second);
+            border-radius: 10pc;
+        }
+
+        &:focus + label:before {
+            box-shadow: 0 0 0 2px var(--color-main);
+        }
+    }
+}
+
+.error-message {
+    display: none;
+    position: absolute;
+    top: 100%;
+    color: var(--color-red);
+    font-size: var(--size-xxs);
+    // margin-top: var(--size-xxs);
+}

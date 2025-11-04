@@ -1,0 +1,40 @@
+.speakers {
+    background: url(./images/background.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    &__headline {
+        font-size: var(--size-xs);
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+    &__name {
+        margin-top: var(--size-xl);
+        font-size: calc(7vw - ((1vw + 1vh) * 0.35));
+        font-family: Second, Main, Arial;
+    }
+
+    &__content {
+        counter-increment: number-counter;
+    }
+
+    &__description {
+        margin-top: var(--size-lg);
+        display: flex;
+        flex-direction: column;
+        font-size: var(--size-xxl);
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 1.1;
+        &::before {
+            content: "[" counter(number-counter) "]";
+            font-size: var(--size-lg);
+            top: 1.7vw;
+
+            // position: absolute;
+            // left: 0;
+            font-weight: bold;
+            color: var(--color-second);
+            margin-bottom: auto;
+        }
+    }
+}

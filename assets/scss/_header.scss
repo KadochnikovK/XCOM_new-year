@@ -1,0 +1,13 @@
+.header {
+    padding-bottom: var(--size-sm);
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    &__content {
+        display: flex;
+        width: 100%;
+        align-items: center;
+    }
+}

@@ -1,0 +1,12 @@
+.logo {
+    height: calc(var(--size-md));
+    @include md {
+        height: calc(var(--size-lg));
+    }
+}
+
+.logos {
+    display: flex;
+    gap: var(--size-sm);
+    align-items: center;
+}
