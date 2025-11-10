@@ -16,15 +16,16 @@
 <body>
     <header class="header container">
         <div class="container__content header__content">
-            <div class="logos">
+            <div class="logos header__logos">
                 <a href="https://www.xcom.ru/">
                     <img class="logos__img logo" src="assets/images/logo-xcom.svg" alt="" />
                 </a>
                 <a href="https://www.xcom.ru/">
-                    <img class="logos__img logo" src="assets/images/logo-space.png" alt="" />
+                    <img style="transform: translateY(-10%);" class="logos__img logo" src="assets/images/logo-filum.svg"
+                        alt="" />
                 </a>
             </div>
-            <div class="menu">
+            <div class="menu header__menu">
                 <div class="menu__hamburger">
                     <span></span>
                     <span></span>
@@ -32,7 +33,7 @@
                 </div>
 
                 <nav class="menu__list">
-                    <a class="menu__link" href="#schedule">Программы вебинаров</a>
+                    <a class="menu__link" href="#block">Программы вебинаров</a>
                     <a class="menu__link" href="#speakers">Спикер</a>
                     <a class="menu__link" href="#registration">регистрация на вебинары</a>
                 </nav>
@@ -42,6 +43,20 @@
     <main>
         <section class="container hero">
             <div class="container__content hero__content">
+                <div class="hero__decoration">
+                    <img class="hero__decoration-item hero__decoration-item--desktop"
+                        src="assets/images/decoration-item-01.svg" alt="">
+                    <img class="hero__decoration-item hero__decoration-item--desktop"
+                        src="assets/images/decoration-item-01.svg" alt="">
+                    <img class="hero__decoration-item hero__decoration-item--desktop"
+                        src="assets/images/decoration-item-01.svg" alt="">
+                    <img class="hero__decoration-item hero__decoration-item--mobile"
+                        src="assets/images/decoration-item-01-mobile.svg" alt="">
+                    <img class="hero__decoration-item hero__decoration-item--mobile"
+                        src="assets/images/decoration-item-01-mobile.svg" alt="">
+                    <img class="hero__decoration-item hero__decoration-item--mobile"
+                        src="assets/images/decoration-item-01-mobile.svg" alt="">
+                </div>
                 <h1 class="headline hero__headline">
                     Новый год <br />
                     <span class="second-font" style="margin: auto">без боли в спине</span><br />
@@ -60,93 +75,102 @@
             </div>
         </section>
 
-        <section id="about" class="about container"></section>
-
-        <!-- <section id="location" class="location container">
-        <div class="location__content container__content">
-          <h2 class="headline">Место проведения</h2>
-
-      
-          <div class="location__map">
-            <div id="map" class="map"></div>
-            <script src="https://api-maps.yandex.ru/2.1/?apikey=eb4cb2bb-d3eb-47fe-acba-5ab39a7aef28&lang=ru_RU"></script>
-            <script>
-              ymaps.ready(init);
-
-              function init() {
-                // Теперь используем id элемента
-                var myMap = new ymaps.Map("map", {
-                  center: [59.950186, 30.294928],
-                  zoom: 16,
-                  controls: ["zoomControl", "fullscreenControl"],
-                });
-
-                var myPlacemark = new ymaps.Placemark(
-                  [59.950186, 30.294928],
-                  {
-                    balloonContent: 'Санкт-Петербург, Пр. Добролюбова 16 к2 "ADAM"',
-                  },
-                  {
-                    preset: "islands#redDotIcon",
-                  }
-                );
-
-                myMap.geoObjects.add(myPlacemark);
-                myMap.behaviors.disable("scrollZoom");
-              }
-            </script>
-          </div>
-        </div>
-      </section> -->
-        <section id="schedule" class="schedule container">
-            <div class="schedule__content container__content">
-                <div class="schedule__header">
-                    <p class="schedule__description">Программа<br />вебинаров</p>
-                    <h2 class="headline schedule__headline">Построение облачной инфраструктуры коммерческих и
-                        государственных предприятий</h2>
+        <section id="about" class="block block--white container">
+            <div class="block__content container__content">
+                <div class="block__header">
+                    <p class="block__description row">о&nbsp;вебинарах <img
+                            class="mobile-only block__decoration block__decoration--small"
+                            src="assets/images/decoration-item-02.svg" alt=""></p>
+                    <h2 class="headline block__headline"><span class="second-color">2&nbsp;бесплатных</span>
+                        вебинара+
+                        <span class="second-color">2&nbsp;розыгрыша</span>
+                        Только
+                        11 и 18 декабря
+                    </h2>
+                    <p class="block__description block__description--big">
+                        <img class="block__decoration" src="assets/images/decoration-item-02.svg" alt="">
+                        <span>На первом вебинаре мы разыграем кресло, а на
+                            втором... приготовили
+                            кое-что особенное!
+                        </span>
+                        <span>
+                            Это будет полноценный полезный подарок, а не просто сувенир. Что это? Раскроем только 18
+                            декабря!
+                        </span>
+                    </p>
                 </div>
 
-                <!-- <div class="schedule__list">
-            <div class="schedule__item">
-              <p class="schedule__item-header">Space VM</p>
-              <p class="schedule__item-content">
-                Платформа серверной виртуализации для масштабируемых и надёжных частных облаков с уникальной технологией FreeGRID для работы с GPU NVIDIA без лицензий
-              </p>
-            </div>
-            <div class="schedule__item">
-              <p class="schedule__item-header">Space VDI</p>
-              <p class="schedule__item-content">
-                Платформа виртуализации рабочих столов, обеспечивающая безопасный доступ к виртуальным и физическим рабочим местам из любой точки мира, с поддержкой российских операционных систем.
-              </p>
-            </div>
-            <div class="schedule__item">
-              <p class="schedule__item-header">Space Cloud</p>
-              <p class="schedule__item-content">
-                Платформа управления мультиоблачной инфраструктурой с порталом самообслуживания, автоматизацией и биллингом, позволяющая объединять ресурсы локальных и внешних облаков
-              </p>
-            </div>
-            <div class="schedule__item">
-              <p class="schedule__item-header">Space Client</p>
-              <p class="schedule__item-content">Клиентское ПО для удобного доступа к виртуальным рабочим столам на Windows, Linux и macOS, включая плавный переход на VDI-инфраструктуру</p>
-            </div>
-          </div>
-        </div> -->
 
-                <div class="swiper firstWebinar schedule__list">
+
+            </div>
+
+        </section>
+
+
+        <section id="block" class="block container">
+            <div class="block__content container__content">
+                <div class="swiper firstWebinar block__list">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space VM</p>
-                                <p class="schedule__item-content">
+                            <div class="block__item block__item--small">
+                                <p class="block__item-header">2 практических
+                                    вебинара</p>
+                                <p class="block__item-content">
+                                    Здоровье спины
+                                    и защита техники
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block__item block__item--small">
+                                <p class="block__item-header">2 розыгрыша</p>
+                                <p class="block__item-content">
+                                    Кресло Filum + секретный приз
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block__item block__item--small">
+                                <p class="block__item-header">Новогодняя
+                                    атмосфера</p>
+                                <p class="block__item-content">
+                                    Маскот, таймлапсы, специальные предложения
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block__item block__item--small block__item--orange ">
+                                <p class="block__item-header">Эффект неожиданности</p>
+                                <p class="block__item-content">Второй подарок станет сюрпризом для всех</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div class="block__header">
+                    <p class="block__description">Программа<br />вебинаров</p>
+                    <h2 class="headline block__headline">Подарок спине: создаем эргономичное рабочее<br> место за 10
+                        минут<br>
+                        <span class="second-color">[11 декабря, 15:00]</span>
+                    </h2>
+                </div>
+                <div class="swiper firstWebinar block__list">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="block__item">
+                                <p class="block__item-header">Space VM</p>
+                                <p class="block__item-content">
                                     Платформа серверной виртуализации для масштабируемых и надёжных частных облаков с
                                     уникальной технологией FreeGRID для работы с GPU NVIDIA без лицензий
                                 </p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space VDI</p>
-                                <p class="schedule__item-content">
+                            <div class="block__item">
+                                <p class="block__item-header">Space VDI</p>
+                                <p class="block__item-content">
                                     Платформа виртуализации рабочих столов, обеспечивающая безопасный доступ к
                                     виртуальным и физическим рабочим местам из любой точки мира, с поддержкой российских
                                     операционных систем.
@@ -154,9 +178,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space Cloud</p>
-                                <p class="schedule__item-content">
+                            <div class="block__item">
+                                <p class="block__item-header">Space Cloud</p>
+                                <p class="block__item-content">
                                     Платформа управления мультиоблачной инфраструктурой с порталом самообслуживания,
                                     автоматизацией и биллингом, позволяющая объединять ресурсы локальных и внешних
                                     облаков
@@ -164,9 +188,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space Client</p>
-                                <p class="schedule__item-content">Клиентское ПО для удобного доступа к виртуальным
+                            <div class="block__item">
+                                <p class="block__item-header">Space Client</p>
+                                <p class="block__item-content">Клиентское ПО для удобного доступа к виртуальным
                                     рабочим столам на Windows, Linux и macOS, включая плавный переход на
                                     VDI-инфраструктуру</p>
                             </div>
@@ -176,35 +200,38 @@
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                 </div>
+
+
+
             </div>
-            <div class="schedule__footer">
-                <a href="#registration" class="schedule__button button">Принять участие</a>
-                <p class="headline schedule__headline">[26 ноября, 11:00]</p>
+            <div class="block__footer">
+                <a href="#registration" class="block__button button">Принять участие</a>
+                <p class="headline block__headline">[26 ноября, 11:00]</p>
             </div>
         </section>
-        <section id="schedule" class="schedule schedule--white container">
-            <div class="schedule__content container__content">
-                <div class="schedule__header">
-                    <p class="schedule__description">Программа<br />вебинаров</p>
-                    <h2 class="headline schedule__headline">Построение облачной инфраструктуры коммерческих и
+        <section id="block" class="block block--white container">
+            <div class="block__content container__content">
+                <div class="block__header">
+                    <p class="block__description">Программа<br />вебинаров</p>
+                    <h2 class="headline block__headline">Построение облачной инфраструктуры коммерческих и
                         государственных предприятий</h2>
                 </div>
 
-                <div class="swiper firstWebinar schedule__list">
+                <div class="swiper firstWebinar block__list">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space VM</p>
-                                <p class="schedule__item-content">
+                            <div class="block__item">
+                                <p class="block__item-header">Space VM</p>
+                                <p class="block__item-content">
                                     Платформа серверной виртуализации для масштабируемых и надёжных частных облаков с
                                     уникальной технологией FreeGRID для работы с GPU NVIDIA без лицензий
                                 </p>
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space VDI</p>
-                                <p class="schedule__item-content">
+                            <div class="block__item">
+                                <p class="block__item-header">Space VDI</p>
+                                <p class="block__item-content">
                                     Платформа виртуализации рабочих столов, обеспечивающая безопасный доступ к
                                     виртуальным и физическим рабочим местам из любой точки мира, с поддержкой российских
                                     операционных систем.
@@ -212,9 +239,9 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space Cloud</p>
-                                <p class="schedule__item-content">
+                            <div class="block__item">
+                                <p class="block__item-header">Space Cloud</p>
+                                <p class="block__item-content">
                                     Платформа управления мультиоблачной инфраструктурой с порталом самообслуживания,
                                     автоматизацией и биллингом, позволяющая объединять ресурсы локальных и внешних
                                     облаков
@@ -222,9 +249,27 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <div class="schedule__item">
-                                <p class="schedule__item-header">Space Client</p>
-                                <p class="schedule__item-content">Клиентское ПО для удобного доступа к виртуальным
+                            <div class="block__item">
+                                <p class="block__item-header">Space Client</p>
+                                <p class="block__item-content">Клиентское ПО для удобного доступа к виртуальным
+                                    рабочим столам на Windows, Linux и macOS, включая плавный переход на
+                                    VDI-инфраструктуру</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block__item">
+                                <p class="block__item-header">Space Cloud</p>
+                                <p class="block__item-content">
+                                    Платформа управления мультиоблачной инфраструктурой с порталом самообслуживания,
+                                    автоматизацией и биллингом, позволяющая объединять ресурсы локальных и внешних
+                                    облаков
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="block__item">
+                                <p class="block__item-header">Space Client</p>
+                                <p class="block__item-content">Клиентское ПО для удобного доступа к виртуальным
                                     рабочим столам на Windows, Linux и macOS, включая плавный переход на
                                     VDI-инфраструктуру</p>
                             </div>
@@ -235,9 +280,9 @@
                     <div class="swiper-button-prev"></div>
                 </div>
             </div>
-            <div class="schedule__footer">
-                <a href="#registration" class="schedule__button button">Принять участие</a>
-                <p class="headline schedule__headline">[26 ноября, 11:00]</p>
+            <div class="block__footer">
+                <a href="#registration" class="block__button button">Принять участие</a>
+                <p class="headline block__headline">[26 ноября, 11:00]</p>
             </div>
         </section>
 

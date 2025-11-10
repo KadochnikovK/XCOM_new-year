@@ -102,6 +102,7 @@ li {
 
 .mobile-only {
     display: block;
+
     @include sm {
         display: none;
     }
@@ -109,7 +110,22 @@ li {
 
 .table-only {
     display: none;
+
     @include sm {
         display: block;
     }
+}
+
+
+.second-color {
+    color: var(--color-second) !important;
+}
+
+.row {
+    display: flex !important;
+    flex-direction: row !important;
+}
+
+.h50 {
+    height: 50vh;
 }

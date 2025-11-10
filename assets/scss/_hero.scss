@@ -1,13 +1,55 @@
 .hero {
     background: url(./images/background.png);
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    padding-bottom: var(--size-xxs);
-    padding-top: var(--size-xxl);
+    background-position: center;
+    padding: var(--size-sm);
+    position: relative;
+
 
     // border-bottom: var(--size-xxxxs) solid var(--color-main);
 
     height: 100vh;
+
+    &__decoration {
+        display: flex;
+        order: 999;
+        position: absolute;
+        inset: auto 0 0 0;
+        transform: translateY(1px);
+
+        @include sm {
+            position: static;
+            order: -1;
+            inset: 0 0 auto 0;
+            transform: translateY(0);
+        }
+    }
+
+    &__decoration-item {
+        width: 33.3333vw;
+
+        &--desktop {
+            display: none;
+        }
+
+        @include sm {
+            width: 10vw;
+            max-width: 130px;
+            position: normal;
+            order: -1;
+
+            &--desktop {
+                display: block;
+
+            }
+
+            &--mobile {
+                display: none;
+
+            }
+        }
+    }
 
     &__content {
         display: flex;
@@ -17,8 +59,9 @@
 
     &__headline {
         font-size: 5.5vw;
-        margin: 0;
-        margin-top: auto;
+        // margin: 0;
+        padding-bottom: 46vw;
+        margin: auto 0;
         font-weight: 700;
         display: flex;
         flex-direction: column;
@@ -31,6 +74,10 @@
         .logo {
             width: 5.5vw !important;
             height: auto !important;
+        }
+
+        @include sm {
+            padding-bottom: 0;
         }
     }
 
@@ -47,6 +94,7 @@
             align-items: end;
             flex-direction: row;
         }
+
         * {
             font-weight: 700;
         }

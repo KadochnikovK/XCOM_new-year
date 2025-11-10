@@ -4,10 +4,25 @@
     position: absolute;
     left: 0;
     right: 0;
+    z-index: 1;
+
+    &__logos {
+        margin-right: auto;
+
+        @include sm {
+            margin-right: 0;
+            margin-left: auto;
+        }
+    }
+
+    &__menu {
+        margin: 0 !important;
+    }
 
     &__content {
         display: flex;
         width: 100%;
         align-items: center;
+        gap: var(--size-sm)
     }
 }

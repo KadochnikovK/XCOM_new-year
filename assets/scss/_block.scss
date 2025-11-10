@@ -1,47 +1,82 @@
-.schedule {
-    &--white {
-        background-color: var(--color-bright);
+.block {
 
-        .schedule__header *,
-        .schedule__footer *:not(.button) {
-            color: var(--color-dark) !important;
-        }
-    }
+
 
     &__header {
         text-transform: uppercase;
         display: flex;
         flex-direction: column;
         gap: var(--size-lg);
+
         * {
             font-weight: 700;
             line-height: 1.1;
         }
 
-        @include sm {
+        @include lg {
             flex-direction: row;
         }
     }
+
+
+
+    &__decoration {
+        display: none;
+
+        &--small {
+            width: var(--size-xs);
+            display: block;
+        }
+
+        @include lg {
+            display: block;
+            margin-left: auto;
+            margin-bottom: auto;
+            width: 5vw;
+
+            &--small {
+                display: none;
+            }
+        }
+
+
+
+    }
+
     &__headline {
         font-size: var(--size-lg);
         margin: 0;
         padding: 0;
         max-width: 85%;
         line-height: 1.1;
+
         @include sm {
             font-size: var(--size-xl);
         }
     }
+
     &__description {
         margin-top: var(--size-xxs);
         font-size: var(--size-xs);
         font-weight: 800 !important;
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-sm);
         flex: 1;
+
+        &--big {
+            //  margin-top:auto;
+
+            flex: auto;
+        }
     }
+
     &__list {
         list-style: none;
         counter-reset: number-counter;
         margin-top: var(--size-xl);
+        margin-bottom: var(--size-xl);
+
         // padding-left: 10vw;
         // padding-left: 0;
     }
@@ -53,21 +88,25 @@
         padding: var(--size-md);
         position: relative;
         text-transform: uppercase;
-        color: var(--color-main);
-        background-color: var(--color-second);
+        color: var(--color-dark);
+        background-color: var(--color-bright);
         display: flex;
         flex-direction: column;
         height: 70vh;
 
+        * {
+            color: var(--color-dark);
+        }
+
         &::before {
             content: "[" counter(number-counter) "]";
-            font-size: var(--size-xxxl);
+            font-size: var(--size-xxl);
             top: 1.7vw;
 
             // position: absolute;
             // left: 0;
             font-weight: bold;
-            color: var(--color-main);
+            color: var(--color-second);
             margin-bottom: auto;
         }
 
@@ -77,6 +116,50 @@
 
         @include md {
             font-size: var(--size-sm);
+        }
+
+        &--small {
+            background-color: rgba(0, 0, 0, 0);
+            color: var(--color-dark);
+            padding: 0;
+            border-right: 1px solid var(--color-bright);
+            border-left: 1px solid var(--color-bright);
+            // min-height: 30vh;
+            height: auto;
+
+
+
+
+            .block__item-content {
+                background-color: var(--color-bright);
+                padding: var(--size-md);
+                color: var(--color-dark);
+                display: flex;
+                align-items: end;
+                min-height: calc((1vw + 1vh) * 7);
+                font-weight: 600;
+            }
+
+            .block__item-header {
+                padding: 0 var(--size-md) 0;
+                order: -1;
+                min-height: calc((1vw + 1vh) * 4);
+                color: var(--color-bright);
+            }
+
+            &::before {
+                margin-top: auto;
+                margin-bottom: 0;
+                font-size: var(--size-xl);
+                padding: 0 var(--size-xs) 0;
+                margin-left: auto;
+                color: var(--color-bright);
+            }
+        }
+
+        &--orange {
+            --color-bright: var(--color-second);
+            --color-dark: #fff;
         }
     }
 
@@ -112,6 +195,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--size-lg);
+
         * {
             font-weight: 700;
         }
@@ -124,4 +208,14 @@
     &__button {
         max-width: max-content;
     }
+
+    &--white {
+        background-color: var(--color-bright);
+
+        .block__header *,
+        .block__footer *:not(.button) {
+            color: var(--color-dark);
+        }
+    }
+
 }
