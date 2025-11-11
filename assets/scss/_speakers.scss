@@ -2,14 +2,16 @@
     background: url(./images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
+
     &__headline {
         font-size: var(--size-xs);
         text-transform: uppercase;
         font-weight: 700;
     }
+
     &__name {
         margin-top: var(--size-xl);
-        font-size: calc(7vw - ((1vw + 1vh) * 0.35));
+        font-size: calc(8vw - ((1vw + 1vh) * 0.35));
         font-family: Second, Main, Arial;
     }
 
@@ -18,13 +20,15 @@
     }
 
     &__description {
+        display: grid;
         margin-top: var(--size-lg);
-        display: flex;
+        // display: flex;
         flex-direction: column;
-        font-size: var(--size-xxl);
+        font-size: var(--size-lg);
         text-transform: uppercase;
         font-weight: 700;
         line-height: 1.1;
+
         &::before {
             content: "[" counter(number-counter) "]";
             font-size: var(--size-lg);
@@ -35,6 +39,10 @@
             font-weight: bold;
             color: var(--color-second);
             margin-bottom: auto;
+        }
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }

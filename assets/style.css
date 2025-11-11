@@ -204,6 +204,42 @@ li {
   height: 50vh;
 }
 
+.decoration-charecter-top {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  transform: translateY(3%);
+  width: 50%;
+  z-index: 10;
+}
+
+.decoration-charecter-side {
+  position: absolute;
+  z-index: 10;
+  top: 100%;
+  width: 30%;
+  max-width: 260px;
+  transform: scale(-1, 1) translateY(30%);
+  right: calc(var(--size-sm) * -1);
+}
+@media (min-width: 1224px) {
+  .decoration-charecter-side {
+    width: 120%;
+    transform: scale(1, 1) translateY(0);
+    right: auto;
+    left: calc(var(--size-sm) * -1);
+    top: 30%;
+  }
+}
+
+.m0 {
+  margin: 0 !important;
+}
+
+.p0 {
+  padding: 0 !important;
+}
+
 .header {
   padding-bottom: var(--size-sm);
   display: flex;
@@ -398,6 +434,7 @@ li {
   display: flex;
   flex-direction: column;
   gap: var(--size-lg);
+  margin-bottom: var(--size-xxxl);
 }
 .block__header * {
   font-weight: 700;
@@ -445,20 +482,74 @@ li {
   display: flex;
   flex-direction: column;
   gap: var(--size-sm);
-  flex: 1;
+  position: relative;
 }
 .block__description--big {
   flex: auto;
+}
+.block__grid {
+  display: none;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--size-sm);
+}
+@media (min-width: 640px) {
+  .block__grid {
+    display: grid;
+  }
+  .block__grid--charecter .block__item:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    inset: auto auto 100% 0;
+    height: 0;
+    padding-bottom: 56.25%;
+    transform: translateY(3%);
+    /* Соотношение сторон (например 16:9) */
+    background: url(./images/top-girl.png) center/cover no-repeat;
+    background-position: bottom;
+    z-index: 10;
+  }
+}
+@media (min-width: 1024px) {
+  .block__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .block__grid--charecter .block__item:nth-child(2)::after {
+    display: none;
+  }
+  .block__grid--charecter .block__item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    inset: auto auto 100% 0;
+    height: 0;
+    padding-bottom: 56.25%;
+    transform: translateY(3%);
+    /* Соотношение сторон (например 16:9) */
+    background: url(./images/top-girl.png) center/cover no-repeat;
+    background-position: bottom;
+    z-index: 10;
+  }
+}
+.block__grid .block__item {
+  position: relative;
+  height: auto;
+  counter-increment: number-counter-grid;
+}
+.block__grid .block__item::before {
+  content: "[" counter(number-counter-grid) "]";
 }
 .block__list {
   list-style: none;
   counter-reset: number-counter;
   margin-top: var(--size-xl);
   margin-bottom: var(--size-xl);
+  position: relative;
+  overflow: visible;
 }
 .block__item {
   counter-increment: number-counter;
-  font-size: var(--size-lg);
   padding: var(--size-md);
   position: relative;
   text-transform: uppercase;
@@ -466,7 +557,6 @@ li {
   background-color: var(--color-bright);
   display: flex;
   flex-direction: column;
-  height: 70vh;
 }
 .block__item * {
   color: var(--color-dark);
@@ -584,17 +674,17 @@ li {
 }
 .speakers__name {
   margin-top: var(--size-xl);
-  font-size: calc(7vw - (1vw + 1vh) * 0.35);
+  font-size: calc(8vw - (1vw + 1vh) * 0.35);
   font-family: Second, Main, Arial;
 }
 .speakers__content {
   counter-increment: number-counter;
 }
 .speakers__description {
+  display: grid;
   margin-top: var(--size-lg);
-  display: flex;
   flex-direction: column;
-  font-size: var(--size-xxl);
+  font-size: var(--size-lg);
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.1;
@@ -606,6 +696,11 @@ li {
   font-weight: bold;
   color: var(--color-second);
   margin-bottom: auto;
+}
+@media (min-width: 1024px) {
+  .speakers__description {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .registration__headline {

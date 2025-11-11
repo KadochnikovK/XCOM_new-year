@@ -7,6 +7,7 @@
         display: flex;
         flex-direction: column;
         gap: var(--size-lg);
+        margin-bottom: var(--size-xxxl);
 
         * {
             font-weight: 700;
@@ -62,7 +63,8 @@
         display: flex;
         flex-direction: column;
         gap: var(--size-sm);
-        flex: 1;
+        position: relative;
+        // flex: 1;
 
         &--big {
             //  margin-top:auto;
@@ -71,19 +73,78 @@
         }
     }
 
+    &__grid {
+        display: none;
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-sm);
+
+        @include sm {
+            display: grid;
+
+            &--charecter .block__item:nth-child(2)::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                inset: auto auto 100% 0;
+                height: 0;
+                padding-bottom: 56.25%;
+                transform: translateY(3%);
+                /* Соотношение сторон (например 16:9) */
+                background: url(./images/top-girl.png) center/cover no-repeat;
+                background-position: bottom;
+                z-index: 10;
+            }
+        }
+
+        @include md {
+            grid-template-columns: repeat(3, 1fr);
+
+            &--charecter .block__item:nth-child(2)::after {
+                display: none;
+            }
+
+            &--charecter .block__item:nth-child(3)::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                inset: auto auto 100% 0;
+                height: 0;
+                padding-bottom: 56.25%;
+                transform: translateY(3%);
+                /* Соотношение сторон (например 16:9) */
+                background: url(./images/top-girl.png) center/cover no-repeat;
+                background-position: bottom;
+                z-index: 10;
+            }
+        }
+
+        .block__item {
+            position: relative;
+            height: auto;
+            counter-increment: number-counter-grid;
+
+            &::before {
+                content: "[" counter(number-counter-grid) "]";
+            }
+
+        }
+    }
+
     &__list {
         list-style: none;
         counter-reset: number-counter;
         margin-top: var(--size-xl);
         margin-bottom: var(--size-xl);
-
+        position: relative;
+        overflow: visible;
         // padding-left: 10vw;
         // padding-left: 0;
     }
 
     &__item {
         counter-increment: number-counter;
-        font-size: var(--size-lg);
+        // font-size: var(--size-lg);
         // padding-left: 6vw;
         padding: var(--size-md);
         position: relative;
@@ -92,7 +153,7 @@
         background-color: var(--color-bright);
         display: flex;
         flex-direction: column;
-        height: 70vh;
+        // height: 70vh;
 
         * {
             color: var(--color-dark);

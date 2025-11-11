@@ -129,3 +129,41 @@ li {
 .h50 {
     height: 50vh;
 }
+
+.decoration-charecter-top {
+    position: absolute;
+    bottom: 100%;
+    right: 0;
+    transform: translateY(3%);
+    width: 50%;
+    z-index: 10;
+}
+
+.decoration-charecter-side {
+    position: absolute;
+    z-index: 10;
+
+    top: 100%;
+    width: 30%;
+    max-width: 260px;
+    transform: scale(-1, 1) translateY(30%);
+    right: calc(var(--size-sm) * -1);
+
+    @include lg {
+        width: 120%;
+        transform: scale(1, 1) translateY(0);
+        right: auto;
+        left: calc(var(--size-sm) * -1);
+        top: 30%;
+    }
+
+
+}
+
+.m0 {
+    margin: 0 !important;
+}
+
+.p0 {
+    padding: 0 !important;
+}
