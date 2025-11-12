@@ -740,7 +740,6 @@ li {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
   border-radius: var(--size-sm);
 }
 .form__headline {
