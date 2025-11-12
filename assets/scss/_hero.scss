@@ -6,7 +6,6 @@
     padding: var(--size-sm);
     position: relative;
 
-
     // border-bottom: var(--size-xxxxs) solid var(--color-main);
 
     height: 100vh;
@@ -34,19 +33,18 @@
         }
 
         @include sm {
-            width: 10vw;
-            max-width: 130px;
+            width: calc((1vw + 1vh) * 5);
+            max-width: 90px;
+            // max-height: 300px;
             position: normal;
             order: -1;
 
             &--desktop {
                 display: block;
-
             }
 
             &--mobile {
                 display: none;
-
             }
         }
     }

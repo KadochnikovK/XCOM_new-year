@@ -2,7 +2,10 @@
     background: url(./images/background.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
+    &__group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
     &__headline {
         font-size: var(--size-xs);
         text-transform: uppercase;
@@ -20,14 +23,15 @@
     }
 
     &__description {
-        display: grid;
+        // display: grid;
         margin-top: var(--size-lg);
         // display: flex;
-        flex-direction: column;
+        // flex-direction: column;
         font-size: var(--size-lg);
         text-transform: uppercase;
         font-weight: 700;
         line-height: 1.1;
+        width: 100%;
 
         &::before {
             content: "[" counter(number-counter) "]";
@@ -43,6 +47,22 @@
 
         @include md {
             grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 100%; /* Важно */
+            object-fit: contain; /* Сохраняет пропорции */
+            transform: scale(1.5);
         }
     }
 }

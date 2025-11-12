@@ -217,7 +217,7 @@ li {
   position: absolute;
   z-index: 10;
   top: 100%;
-  width: 30%;
+  width: 20%;
   max-width: 260px;
   transform: scale(-1, 1) translateY(30%);
   right: calc(var(--size-sm) * -1);
@@ -369,8 +369,8 @@ li {
 }
 @media (min-width: 640px) {
   .hero__decoration-item {
-    width: 10vw;
-    max-width: 130px;
+    width: calc((1vw + 1vh) * 5);
+    max-width: 90px;
     position: normal;
     order: -1;
   }
@@ -667,6 +667,10 @@ li {
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.speakers__group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 .speakers__headline {
   font-size: var(--size-xs);
   text-transform: uppercase;
@@ -681,13 +685,12 @@ li {
   counter-increment: number-counter;
 }
 .speakers__description {
-  display: grid;
   margin-top: var(--size-lg);
-  flex-direction: column;
   font-size: var(--size-lg);
   text-transform: uppercase;
   font-weight: 700;
   line-height: 1.1;
+  width: 100%;
 }
 .speakers__description::before {
   content: "[" counter(number-counter) "]";
@@ -701,6 +704,21 @@ li {
   .speakers__description {
     grid-template-columns: 1fr 1fr;
   }
+}
+.speakers__image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.speakers__image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Важно */
+  -o-object-fit: contain;
+     object-fit: contain; /* Сохраняет пропорции */
+  transform: scale(1.5);
 }
 
 .registration__headline {
@@ -1113,4 +1131,4 @@ li {
   font-size: var(--size-sm);
   line-height: 1.2;
   color: var(--color-dark);
-}/*# sourceMappingURL=style.css.map */
+}
