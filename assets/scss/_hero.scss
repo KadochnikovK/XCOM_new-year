@@ -6,9 +6,29 @@
     padding: var(--size-sm);
     position: relative;
 
+
+
     // border-bottom: var(--size-xxxxs) solid var(--color-main);
 
     height: 100vh;
+
+    &--variant {
+        background: url(./images/background-02.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: auto;
+        font-family: Second;
+
+        .hero__content {
+            padding-top: var(--size-lg);
+            padding-bottom: var(--size-lg);
+        }
+
+        .second-font {
+            font-family: Main;
+        }
+    }
 
     &__decoration {
         display: flex;

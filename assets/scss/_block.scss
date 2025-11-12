@@ -64,11 +64,12 @@
         flex-direction: column;
         gap: var(--size-sm);
         position: relative;
+        width: 10vw;
         // flex: 1;
 
         &--big {
             //  margin-top:auto;
-
+            width: auto;
             flex: auto;
         }
     }
@@ -222,6 +223,29 @@
             --color-bright: var(--color-second);
             --color-dark: #fff;
         }
+
+        &--variant {
+            padding: 0;
+            background: none;
+
+            &::before {
+                display: none;
+            }
+
+            .block__item-header {
+                color: var(--color-bright);
+            }
+        }
+
+
+
+
+    }
+
+    &__item-image {
+        height: 50vh;
+        object-fit: cover;
+        margin-bottom: var(--size-sm);
     }
 
     &__item-header {
@@ -278,5 +302,16 @@
             color: var(--color-dark);
         }
     }
+
+
+    &--orange {
+        background-color: var(--color-second);
+
+        .block__header *,
+        .block__footer *:not(.button) {
+            color: var(--color-bright);
+        }
+    }
+
 
 }

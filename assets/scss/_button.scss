@@ -23,10 +23,11 @@
 
     &--second {
         background-color: var(--color-bright);
-        color: var(--color-second);
+        color: var(--color-dark) !important;
+
         &:hover {
-            background-color: var(--color-second);
-            color: var(--color-bright);
+            background-color: var(--color-dark);
+            color: var(--color-bright) !important;
         }
     }
 }

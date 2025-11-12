@@ -1,11 +1,13 @@
 .speakers {
-    background: url(./images/background.png);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    background: var(--color-dark);
+    overflow: hidden;
+    // padding-bottom: 0;
+
     &__group {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 3fr;
     }
+
     &__headline {
         font-size: var(--size-xs);
         text-transform: uppercase;
@@ -25,10 +27,11 @@
     &__description {
         // display: grid;
         margin-top: var(--size-lg);
-        // display: flex;
-        // flex-direction: column;
-        font-size: var(--size-lg);
+        display: flex;
+        flex-direction: column;
+        font-size: var(--size-xl);
         text-transform: uppercase;
+        margin-bottom: var(--size-xxxl);
         font-weight: 700;
         line-height: 1.1;
         width: 100%;
@@ -45,24 +48,29 @@
             margin-bottom: auto;
         }
 
-        @include md {
-            grid-template-columns: 1fr 1fr;
-        }
+        // @include md {
+        //     grid-template-columns: 1fr 1fr;
+        // }
     }
 
     &__image {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: flex;
         justify-content: center;
         align-items: start;
+        position: relative;
 
         img {
+            position: absolute;
+            inset: calc((1vw + 1vh) * -8) 0 0 auto;
             width: 100%;
-            height: auto;
-            max-width: 100%; /* Важно */
-            object-fit: contain; /* Сохраняет пропорции */
-            transform: scale(1.5);
+            // height: 100%;
+            max-width: 950px;
+            /* Важно */
+            object-fit: contain;
+            /* Сохраняет пропорции */
+            // transform: translateY(20%) scale(1);
         }
     }
 }
