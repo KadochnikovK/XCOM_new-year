@@ -32,8 +32,10 @@
         </div>
 
         <nav class="menu__list">
-          <a class="menu__link" href="#block">Программы вебинаров</a>
-          <a class="menu__link" href="#speakers">Спикер</a>
+          <a class="menu__link" href="#about">о вебинарах</a>
+          <a class="menu__link" href="#schedule">Программы вебинаров</a>
+          <a class="menu__link" href="#speaker">спикер</a>
+          <a class="menu__link" href="#products">Продукция</a>
           <a class="menu__link" href="#registration">регистрация на вебинары</a>
         </nav>
       </div>
@@ -96,7 +98,7 @@
       </div>
     </section>
 
-    <section class="block container">
+    <section class="block container" id="schedule">
       <div class="block__content container__content">
         <div class="swiper firstWebinar block__list">
           <div class="swiper-wrapper">
@@ -315,7 +317,7 @@
       </div>
     </section>
 
-    <section id="speakers" class="speakers container">
+    <section id="speaker" class="speakers container">
       <div class="speakers__content container__content">
         <h2 class="speakers__headline">Спикеры</h2>
         <div class="speakers__item">
@@ -331,7 +333,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="block block--orange container">
+    <section id="products" class="block block--orange container">
       <div class="block__content container__content" style="position: relative;">
         <div class="block__header m0">
           <p class="block__description row">о&nbsp;вебинарах <img
@@ -340,12 +342,12 @@
           <h2 class="headline block__headline">
             Основной каталог представлен на маркетплейсах
           </h2>
-          <p class="block__description block__description--big">
-            <a href="#" class="block__button button button--second" style="width: max-content">Перейти к каталогу</a>
+          <p class="block__description block__description--big after-lg">
+            <a href="#" class="block__button button button--second " style="width: max-content">Перейти к каталогу</a>
           </p>
         </div>
 
-        <div class="swiper filumGoods block__list block__list" style="padding-left: 14vw; position: relative;">
+        <div class="swiper filumGoods block__list block__list block__slider" >
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="block__item block__item--variant">
@@ -373,7 +375,7 @@
             </div>
 
           </div>
-          <div style="position: absolute; left: 0; bottom: 0; display: flex; gap: 20px">
+          <div class="block__slider-buttons ">
 
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>
@@ -381,9 +383,9 @@
           </div>
         </div>
       </div>
-      <div class="block__footer mobile-only">
-        <a href="#registration" class="block__button button">Предворительная регистрация</a>
-        <!-- <p class="headline block__headline">[26 ноября, 11:00]</p> -->
+      <div class="block__footer before-lg">
+       <a href="#" class="block__button button button--second " style="width: max-content">Перейти к каталогу</a>
+  
       </div>
       </div>
     </section>
@@ -423,7 +425,7 @@
                 </div>
               </div>
 
-              <button type="submit" class="form__button button button--second">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              <button type="submit" class="form__button button button--third">ЗАРЕГИСТРИРОВАТЬСЯ</button>
             </div>
           </form>
 
@@ -460,7 +462,7 @@
                 </div>
               </div>
 
-              <button type="submit" class="form__button button button--second">Предварительная регистрация</button>
+              <button type="submit" class="form__button button button--third">Предварительная регистрация</button>
             </div>
           </form>
         </div>

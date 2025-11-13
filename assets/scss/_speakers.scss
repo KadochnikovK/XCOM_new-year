@@ -1,11 +1,17 @@
 .speakers {
     background: var(--color-dark);
     overflow: hidden;
-    // padding-bottom: 0;
+    padding-bottom: 0;
+    @include md {
+        padding-bottom: inherit;
+    }
 
     &__group {
         display: grid;
-        grid-template-columns: 2fr 3fr;
+
+        @include md {
+            grid-template-columns: 2fr 3fr;
+        }
     }
 
     &__headline {
@@ -31,7 +37,7 @@
         flex-direction: column;
         font-size: var(--size-xl);
         text-transform: uppercase;
-        margin-bottom: var(--size-xxxl);
+        margin-bottom: var(--size-sm);
         font-weight: 700;
         line-height: 1.1;
         width: 100%;
@@ -48,29 +54,33 @@
             margin-bottom: auto;
         }
 
-        // @include md {
-        //     grid-template-columns: 1fr 1fr;
-        // }
+        @include md {
+            margin-bottom: var(--size-xxxl);
+        }
     }
 
     &__image {
         width: 100%;
-        height: 100%;
+        height: 50%;
         display: flex;
         justify-content: center;
         align-items: start;
         position: relative;
 
         img {
-            position: absolute;
-            inset: calc((1vw + 1vh) * -8) 0 0 auto;
-            width: 100%;
-            // height: 100%;
-            max-width: 950px;
-            /* Важно */
             object-fit: contain;
-            /* Сохраняет пропорции */
-            // transform: translateY(20%) scale(1);
+            width: 70%;
+            @include md {
+                position: absolute;
+                inset: calc((1vw + 1vh) * -3) 0 0 auto;
+                width: 70%;
+                // height: 100%;
+                max-width: 950px;
+                /* Важно */
+                object-fit: contain;
+                /* Сохраняет пропорции */
+                transform: translateX(-15%);
+            }
         }
     }
 }

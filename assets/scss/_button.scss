@@ -30,4 +30,14 @@
             color: var(--color-bright) !important;
         }
     }
+
+    &--third {
+        background-color: var(--color-bright);
+        color: var(--color-dark) !important;
+
+        &:hover {
+            background-color: var(--color-second);
+            color: var(--color-bright) !important;
+        }
+    }
 }

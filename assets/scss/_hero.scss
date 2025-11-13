@@ -6,8 +6,6 @@
     padding: var(--size-sm);
     position: relative;
 
-
-
     // border-bottom: var(--size-xxxxs) solid var(--color-main);
 
     height: 100vh;
@@ -18,15 +16,22 @@
         background-repeat: no-repeat;
         background-position: center;
         height: auto;
-        font-family: Second;
 
         .hero__content {
             padding-top: var(--size-lg);
             padding-bottom: var(--size-lg);
         }
 
+        .hero__headline {
+            font-family: Second !important;
+            font-size: calc((1vw + 1vh) * 3);
+            padding: 0;
+        }
+
         .second-font {
             font-family: Main;
+            font-weight: 600;
+            
         }
     }
 

@@ -108,6 +108,20 @@ li {
     }
 }
 
+.before-lg {
+    display: block;
+    @include lg {
+        display: none !important;
+    }
+}
+
+.after-lg {
+    display: none !important;
+    @include lg {
+        display: block !important;
+    }
+}
+
 .table-only {
     display: none;
 
@@ -115,7 +129,6 @@ li {
         display: block;
     }
 }
-
 
 .second-color {
     color: var(--color-second) !important;
@@ -156,8 +169,6 @@ li {
         left: calc(var(--size-sm) * -1);
         top: 30%;
     }
-
-
 }
 
 .m0 {
