@@ -9,7 +9,7 @@
     // border-bottom: var(--size-xxxxs) solid var(--color-main);
 
     height: 100vh;
-    min-height: 60vw;
+    min-height: 55vw;
 
     &--variant {
         background: url(./images/background-02.png);
@@ -85,7 +85,7 @@
         font-size: 5.5vw;
         // margin: 0;
         padding-bottom: 46vw;
-        margin: auto 0;
+        margin: var(--size-xs) 0 auto;
         font-weight: 700;
         display: flex;
         flex-direction: column;

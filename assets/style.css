@@ -375,7 +375,7 @@ li {
   padding: var(--size-sm);
   position: relative;
   height: 100vh;
-  min-height: 60vw;
+  min-height: 55vw;
 }
 .hero--variant {
   background: url(./images/background-02.png);
@@ -440,7 +440,7 @@ li {
 .hero__headline {
   font-size: 5.5vw;
   padding-bottom: 46vw;
-  margin: auto 0;
+  margin: var(--size-xs) 0 auto;
   font-weight: 700;
   display: flex;
   flex-direction: column;
