@@ -375,6 +375,7 @@ li {
   padding: var(--size-sm);
   position: relative;
   height: 100vh;
+  min-height: 60vw;
 }
 .hero--variant {
   background: url(./images/background-02.png);

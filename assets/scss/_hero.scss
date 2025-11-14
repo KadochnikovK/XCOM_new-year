@@ -9,6 +9,7 @@
     // border-bottom: var(--size-xxxxs) solid var(--color-main);
 
     height: 100vh;
+    min-height: 60vw;
 
     &--variant {
         background: url(./images/background-02.png);
