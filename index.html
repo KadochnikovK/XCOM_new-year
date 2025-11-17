@@ -1,70 +1,63 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/plugins/swiper/swiper.css" />
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="stylesheet" href="assets/plugins/animations/animations.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/plugins/swiper/swiper.css" />
-  <link rel="stylesheet" href="assets/style.css" />
-  <link rel="stylesheet" href="assets/plugins/animations/animations.css" />
+    <script src="./assets/plugins/swiper/swiper.js"></script>
 
-  <script src="./assets/plugins/swiper/swiper.js"></script>
+    <title>XCOM & Space</title>
+  </head>
 
-  <title>XCOM & Space</title>
-</head>
-
-<body>
-  <header class="header container">
-    <div class="container__content header__content">
-      <div class="logos header__logos">
-        <a href="https://www.xcom.ru/">
-          <img class="logos__img logo" src="assets/images/logo-xcom.svg" alt="" />
-        </a>
-        <a href="https://www.xcom.ru/">
-          <img style="transform: translateY(-10%)" class="logos__img logo" src="assets/images/logo-filum.svg" alt="" />
-        </a>
-      </div>
-      <div class="menu header__menu">
-        <div class="menu__hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+  <body>
+    <header class="header container">
+      <div class="container__content header__content">
+        <div class="logos header__logos">
+          <a href="https://www.xcom.ru/">
+            <img class="logos__img logo" src="assets/images/logo-xcom.svg" alt="" />
+          </a>
+          <a href="https://www.xcom.ru/">
+            <img style="transform: translateY(-10%)" class="logos__img logo" src="assets/images/logo-filum.svg" alt="" />
+          </a>
         </div>
+        <div class="menu header__menu">
+          <div class="menu__hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
 
-        <nav class="menu__list">
-          <a class="menu__link" href="#about">о вебинарах</a>
-          <a class="menu__link" href="#schedule">Программы вебинаров</a>
-          <a class="menu__link" href="#speaker">спикер</a>
-          <a class="menu__link" href="#products">Продукция</a>
-          <a class="menu__link" href="#registration">регистрация на вебинары</a>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="container hero">
-      <div class="container__content hero__content">
-        <div class="hero__decoration">
-          <img class="hero__decoration-item hero__decoration-item--desktop" src="assets/images/decoration-item-01.svg"
-            alt="" />
-          <img class="hero__decoration-item hero__decoration-item--desktop" src="assets/images/decoration-item-01.svg"
-            alt="" />
-          <img class="hero__decoration-item hero__decoration-item--desktop" src="assets/images/decoration-item-01.svg"
-            alt="" />
-          <img class="hero__decoration-item hero__decoration-item--mobile"
-            src="assets/images/decoration-item-01-mobile.svg" alt="" />
-          <img class="hero__decoration-item hero__decoration-item--mobile"
-            src="assets/images/decoration-item-01-mobile.svg" alt="" />
-          <img class="hero__decoration-item hero__decoration-item--mobile"
-            src="assets/images/decoration-item-01-mobile.svg" alt="" />
+          <nav class="menu__list">
+            <a class="menu__link" href="#about">о вебинарах</a>
+            <a class="menu__link" href="#schedule">Программы вебинаров</a>
+            <a class="menu__link" href="#speaker">спикер</a>
+            <a class="menu__link" href="#products">Продукция</a>
+            <a class="menu__link" href="#registration">регистрация на вебинары</a>
+          </nav>
         </div>
-        <h1 class="headline hero__headline">
-          Новый год <br />
-          <span class="second-font" style="margin: auto">без боли в спине</span><br />
-          с исправной <br />
-          <span class="second-font" style="margin: auto">техникой</span>
-        </h1>
-        <!-- <div class="hero__description">
+      </div>
+    </header>
+    <main>
+      <section class="container hero">
+        <div class="container__content hero__content">
+          <div class="hero__decoration">
+            <img class="hero__decoration-item hero__decoration-item--desktop" src="assets/images/decoration-item-01.svg" alt="" />
+            <img class="hero__decoration-item hero__decoration-item--desktop" src="assets/images/decoration-item-01.svg" alt="" />
+            <img class="hero__decoration-item hero__decoration-item--desktop" src="assets/images/decoration-item-01.svg" alt="" />
+            <img class="hero__decoration-item hero__decoration-item--mobile" src="assets/images/decoration-item-01-mobile.svg" alt="" />
+            <img class="hero__decoration-item hero__decoration-item--mobile" src="assets/images/decoration-item-01-mobile.svg" alt="" />
+            <img class="hero__decoration-item hero__decoration-item--mobile" src="assets/images/decoration-item-01-mobile.svg" alt="" />
+          </div>
+          <h1 class="headline hero__headline">
+            Новый год <br />
+            <span class="second-font" style="margin: auto">без боли в спине</span><br />
+            с исправной <br />
+            <span class="second-font" style="margin: auto">техникой</span>
+          </h1>
+          <!-- <div class="hero__description">
                     <p>
                         <a href="#registration">
                             ПРИНЯть участие
@@ -73,411 +66,408 @@
                     </p>
 
                 </div> -->
-      </div>
-    </section>
-
-    <section id="about" class="block block--white container">
-      <div class="block__content container__content">
-        <div class="block__header m0">
-          <p class="block__description row">о&nbsp;вебинарах <img
-              class="mobile-only block__decoration block__decoration--small" src="assets/images/decoration-item-02.svg"
-              alt="" /></p>
-          <h2 class="headline block__headline">
-            <span class="second-color">2&nbsp;бесплатных</span>
-            вебинара+
-            <span class="second-color">2&nbsp;розыгрыша</span>
-            Только 11 и 18 декабря
-          </h2>
-          <p class="block__description block__description--big">
-            <img class="block__decoration" src="assets/images/decoration-item-02.svg" alt="" />
-            <span>На первом вебинаре мы разыграем кресло, а на втором... приготовили кое-что особенное! </span>
-            <span> Это будет полноценный полезный подарок, а не просто сувенир. Что это? Раскроем только 18 декабря!
-            </span>
-          </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="block container" id="schedule">
-      <div class="block__content container__content">
-        <div class="swiper firstWebinar block__list">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="block__item block__item--small">
-                <p class="block__item-header">2 практических вебинара</p>
-                <p class="block__item-content">Здоровье спины и защита техники</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item block__item--small">
-                <p class="block__item-header">2 розыгрыша</p>
-                <p class="block__item-content">Кресло Filum + секретный приз</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item block__item--small">
-                <p class="block__item-header">Новогодняя атмосфера</p>
-                <p class="block__item-content">Маскот, таймлапсы, специальные предложения</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item block__item--small block__item--orange">
-                <p class="block__item-header">Эффект неожиданности</p>
-                <p class="block__item-content">Второй подарок станет сюрпризом для всех</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-        </div>
-        <div class="block__header">
-          <p class="block__description">Программа<br />вебинаров</p>
-          <h2 class="headline block__headline">
-            Подарок спине: создаем эргономичное рабочее<br />
-            место за 10 минут<br />
-            <span class="second-color">[11 декабря, 15:00]</span>
-          </h2>
-        </div>
-
-        <div class="block__grid block__grid--charecter">
-          <div class="block__item">
-            <p class="block__item-header">Секрет чистого стола</p>
-            <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">инструкция по кронштейнам</p>
-            <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Анатомия правильного кресла</p>
-            <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Живая демонстрация</p>
-            <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Розыгрыш №1</p>
-            <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Секретный анонс</p>
-            <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
-          </div>
-        </div>
-
-        <div class="swiper firstWebinar block__list mobile-only block__list">
-          <img class="decoration-charecter-top" src="assets/images/top-girl.png" alt="" />
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Секрет чистого стола</p>
-                <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">инструкция по кронштейнам</p>
-                <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Анатомия правильного кресла</p>
-                <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Живая демонстрация</p>
-                <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Розыгрыш №1</p>
-                <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Секретный анонс</p>
-                <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-        </div>
-      </div>
-      <div class="block__footer">
-        <a href="#registration" class="block__button button">Принять участие</a>
-        <!-- <p class="headline block__headline">[26 ноября, 11:00]</p> -->
-      </div>
-    </section>
-    <section id="block" class="block block--white container">
-      <div class="block__content container__content">
-        <div class="block__header">
-          <p class="block__description">
-            <img class="decoration-charecter-side" src="assets/images/side-girl.png" alt="" />
-            Программа<br />вебинаров
-          </p>
-          <h2 class="headline block__headline">
-            Новогодняя защита: <br />как уберечь технику<br />
-            от скачков напряжения <br /><span class="second-color">[18 декабря, 15:00]</span>
-          </h2>
-        </div>
-
-        <div class="block__grid">
-          <div class="block__item">
-            <p class="block__item-header">Секрет чистого стола</p>
-            <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">инструкция по кронштейнам</p>
-            <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Анатомия правильного кресла</p>
-            <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Живая демонстрация</p>
-            <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Розыгрыш №1</p>
-            <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
-          </div>
-
-          <div class="block__item">
-            <p class="block__item-header">Секретный анонс</p>
-            <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
-          </div>
-        </div>
-
-        <div class="swiper firstWebinar block__list mobile-only block__list">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Секрет чистого стола</p>
-                <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">инструкция по кронштейнам</p>
-                <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Анатомия правильного кресла</p>
-                <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Живая демонстрация</p>
-                <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Розыгрыш №1</p>
-                <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item">
-                <p class="block__item-header">Секретный анонс</p>
-                <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div> -->
-        </div>
-      </div>
-      <div class="block__footer">
-        <a href="#registration" class="block__button button">Предворительная регистрация</a>
-        <!-- <p class="headline block__headline">[26 ноября, 11:00]</p> -->
-      </div>
-    </section>
-
-    <section id="speaker" class="speakers container">
-      <div class="speakers__content container__content">
-        <h2 class="speakers__headline">Спикеры</h2>
-        <div class="speakers__item">
-          <p class="speakers__name">АРТЕМ НЕВЕРОВ</p>
-          <div class="speakers__group">
-            <p class="speakers__description">продакт-менеджер
-              по СКС
-              и электрике</p>
-            <div class="speakers__image">
-              <img src="assets/images/speaker.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="products" class="block block--orange container">
-      <div class="block__content container__content" style="position: relative;">
-        <div class="block__header m0">
-          <p class="block__description row">о&nbsp;вебинарах <img
-              class="mobile-only block__decoration block__decoration--small" src="assets/images/decoration-item-02.svg"
-              alt="" /></p>
-          <h2 class="headline block__headline">
-            Основной каталог представлен на маркетплейсах
-          </h2>
-          <p class="block__description block__description--big after-lg">
-            <a href="#" class="block__button button button--second " style="width: max-content">Перейти к каталогу</a>
-          </p>
-        </div>
-
-        <div class="swiper filumGoods block__list block__list block__slider" >
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="block__item block__item--variant">
-                <img class="block__item-image" src="assets/images/slide-01.png" alt="">
-                <p class="block__item-content">красное/черное кресло</p>
-                <p class="block__item-header">Кресло Filum</p>
-
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item block__item--variant">
-                <img class="block__item-image" src="assets/images/slide-02.png" alt="">
-                <p class="block__item-content">белая клавиатура</p>
-                <p class="block__item-header">Клавиатура Filum</p>
-
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="block__item block__item--variant">
-                <img class="block__item-image" src="assets/images/slide-03.png" alt="">
-                <p class="block__item-content">4 разъема</p>
-                <p class="block__item-header">Сетевой фильтр Filum</p>
-
-              </div>
-            </div>
-
-          </div>
-          <div class="block__slider-buttons ">
-
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-
-          </div>
-        </div>
-      </div>
-      <div class="block__footer before-lg">
-       <a href="#" class="block__button button button--second " style="width: max-content">Перейти к каталогу</a>
-  
-      </div>
-      </div>
-    </section>
-    <section class="container registration" id="registration">
-      <div class="container__content registration__content">
-        <h2 class="registration__headline headline">Регистрация</h2>
-
-        <div class="registration__forms">
-          <form class="form" id="first-form" action="#">
-            <p class="form__headline">11 декабря</p>
-            <p class="form__description">Подарок спине: создаем эргономичное рабочее место за 10 минут
+      <section id="about" class="block block--white container">
+        <div class="block__content container__content">
+          <div class="block__header m0">
+            <p class="block__description row">о&nbsp;вебинарах <img class="mobile-only block__decoration block__decoration--small" src="assets/images/decoration-item-02.svg" alt="" /></p>
+            <h2 class="headline block__headline">
+              <span class="second-color">2&nbsp;бесплатных</span>
+              вебинара+
+              <span class="second-color">2&nbsp;розыгрыша</span>
+              Только 11 и 18 декабря
+            </h2>
+            <p class="block__description block__description--big">
+              <img class="block__decoration" src="assets/images/decoration-item-02.svg" alt="" />
+              <span>На первом вебинаре мы разыграем кресло, а на втором... приготовили кое-что особенное! </span>
+              <span> Это будет полноценный полезный подарок, а не просто сувенир. Что это? Раскроем только 18 декабря! </span>
             </p>
-            <div class="form__wrapper">
-              <div class="form__inputs">
-                <div class="form__item">
-                  <input type="text" class="form__input" placeholder="ФИО" name="name" value="" id="name" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-                <div class="form__item">
-                  <input type="text" class="form__input" placeholder="Наименование организации" name="company" value=""
-                    id="company" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-                <div class="form__item">
-                  <input type="number" class="form__input" placeholder="ИНН" name="taxId" value="" id="taxId" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-                <div class="form__item">
-                  <input type="email" class="form__input" placeholder="E-mail" name="email" value="" id="email" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-
-                <div class="form__item form__item--checkbox">
-                  <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox" checked />
-                  <label for="privacy-policy" class="form__checkbox-label">Согласие на прозвон</label>
-                  <div class="error-message" style="display: none"></div>
-                </div>
-              </div>
-
-              <button type="submit" class="form__button button button--third">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-            </div>
-          </form>
-
-          <form class="form" id="second-form" action="#">
-            <p class="form__headline form__headline--description">18 декабря</p>
-            <p class="form__description">Новогодняя защита: как уберечь технику от скачков напряжения
-            </p>
-            <div class="form__wrapper">
-              <div class="form__inputs">
-                <div class="form__item">
-                  <input type="text" class="form__input" placeholder="ФИО" name="name" value="" id="name-startup" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-                <div class="form__item">
-                  <input type="text" class="form__input" placeholder="Наименование организации" name="company" value=""
-                    id="company-startup" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-                <div class="form__item">
-                  <input type="number" class="form__input" placeholder="ИНН" name="taxId" value="" id="taxId-startup" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-                <div class="form__item">
-                  <input type="email" class="form__input" placeholder="E-mail" name="email" value=""
-                    id="email-startup" />
-                  <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
-                </div>
-
-                <div class="form__item form__item--checkbox">
-                  <input type="checkbox" id="privacy-policy-startup" name="privacy-policy" class="form__checkbox"
-                    checked />
-                  <label for="privacy-policy-startup" class="form__checkbox-label">Согласие на прозвон</label>
-                  <div class="error-message" style="display: none"></div>
-                </div>
-              </div>
-
-              <button type="submit" class="form__button button button--third">Предварительная регистрация</button>
-            </div>
-          </form>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="container hero hero--variant">
-      <div class="container__content hero__content">
-       
-        <h1 class="headline hero__headline">
-          Становитесь <br />
-          <span class="second-font" style="margin: auto">диллером Filum </span><br />
-          Зарабатывайте с нами <br />
-          <span class="second-font" style="margin: auto">dealer@xcom.ru</span>
-        </h1>
-        <!-- <div class="hero__description">
+      </section>
+
+      <section class="block container" id="schedule">
+        <div class="block__content container__content">
+          <div class="swiper firstWebinar block__list">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="block__item block__item--small">
+                  <p class="block__item-header">2 практических вебинара</p>
+                  <p class="block__item-content">Здоровье спины и защита техники</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--small">
+                  <p class="block__item-header">2 розыгрыша</p>
+                  <p class="block__item-content">Кресло Filum + секретный приз</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--small">
+                  <p class="block__item-header">Новогодняя атмосфера</p>
+                  <p class="block__item-content">Маскот, таймлапсы, специальные предложения</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--small block__item--orange">
+                  <p class="block__item-header">Эффект неожиданности</p>
+                  <p class="block__item-content">Второй подарок станет сюрпризом для всех</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          </div>
+          <div class="block__header">
+            <p class="block__description">Программа<br />вебинаров</p>
+            <h2 class="headline block__headline">
+              Подарок спине: создаем эргономичное рабочее<br />
+              место за 10 минут<br />
+              <span class="second-color">[11 декабря, 15:00]</span>
+            </h2>
+          </div>
+
+          <div class="block__grid block__grid--charecter">
+            <div class="block__item">
+              <p class="block__item-header">Секрет чистого стола</p>
+              <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">инструкция по кронштейнам</p>
+              <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Анатомия правильного кресла</p>
+              <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Живая демонстрация</p>
+              <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Розыгрыш №1</p>
+              <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Секретный анонс</p>
+              <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
+            </div>
+          </div>
+
+          <div class="swiper firstWebinar block__list mobile-only block__list">
+            <img class="decoration-charecter-top" src="assets/images/top-girl.png" alt="" />
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Секрет чистого стола</p>
+                  <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">инструкция по кронштейнам</p>
+                  <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Анатомия правильного кресла</p>
+                  <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Живая демонстрация</p>
+                  <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Розыгрыш №1</p>
+                  <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Секретный анонс</p>
+                  <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+        <div class="block__footer">
+          <a href="#registration" class="block__button button">Принять участие</a>
+          <!-- <p class="headline block__headline">[26 ноября, 11:00]</p> -->
+        </div>
+      </section>
+      <section id="block" class="block block--white container">
+        <div class="block__content container__content">
+          <div class="block__header">
+            <p class="block__description">
+              <img class="decoration-charecter-side" src="assets/images/side-girl.png" alt="" />
+              Программа<br />вебинаров
+            </p>
+            <h2 class="headline block__headline">
+              Новогодняя защита: <br />как уберечь технику<br />
+              от скачков напряжения <br /><span class="second-color">[18 декабря, 15:00]</span>
+            </h2>
+          </div>
+
+          <div class="block__grid">
+            <div class="block__item">
+              <p class="block__item-header">Секрет чистого стола</p>
+              <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">инструкция по кронштейнам</p>
+              <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Анатомия правильного кресла</p>
+              <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Живая демонстрация</p>
+              <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Розыгрыш №1</p>
+              <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
+            </div>
+
+            <div class="block__item">
+              <p class="block__item-header">Секретный анонс</p>
+              <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
+            </div>
+          </div>
+
+          <div class="swiper firstWebinar block__list mobile-only block__list">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Секрет чистого стола</p>
+                  <p class="block__item-content">Как один гаджет заменяет гору подставок и убирает все провода</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">инструкция по кронштейнам</p>
+                  <p class="block__item-content">Как настроить высоту, наклон и поворот монитора одной рукой</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Анатомия правильного кресла</p>
+                  <p class="block__item-content">3 ключевые регулировки, которые снимут нагрузку с позвоночника</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Живая демонстрация</p>
+                  <p class="block__item-content">Установка кронштейна Filum на примере реального рабочего места</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Розыгрыш №1</p>
+                  <p class="block__item-content">Игровое кресло Filum среди всех участников вебинара</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item">
+                  <p class="block__item-header">Секретный анонс</p>
+                  <p class="block__item-content">Участников первого вебинара ждет особый сюрприз на втором потоке</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+        <div class="block__footer">
+          <a href="#registration" class="block__button button">Предворительная регистрация</a>
+          <!-- <p class="headline block__headline">[26 ноября, 11:00]</p> -->
+        </div>
+      </section>
+
+      <section id="speaker" class="speakers container">
+        <div class="speakers__content container__content">
+          <h2 class="speakers__headline">Спикеры</h2>
+          <div class="speakers__item">
+            <p class="speakers__name">АРТЕМ НЕВЕРОВ</p>
+            <div class="speakers__group">
+              <p class="speakers__description">продакт-менеджер по СКС и электрике</p>
+              <div class="speakers__image">
+                <img src="assets/images/speaker.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="products" class="block block--orange container">
+        <div class="block__content container__content" style="position: relative">
+          <div class="block__header m0">
+            <p class="block__description row">о&nbsp;вебинарах <img class="mobile-only block__decoration block__decoration--small" src="assets/images/decoration-item-02.svg" alt="" /></p>
+            <h2 class="headline block__headline">Основной каталог представлен на маркетплейсах</h2>
+            <p class="block__description block__description--big after-lg">
+              <a href="#" class="block__button button button--second" style="width: max-content">Перейти к каталогу</a>
+            </p>
+          </div>
+
+          <div class="swiper filumGoods block__list block__list block__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="block__item block__item--variant">
+                  <img class="block__item-image" src="assets/images/slide-01.png" alt="" />
+                  <p class="block__item-content">красное/черное кресло</p>
+                  <p class="block__item-header">Кресло Filum</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--variant">
+                  <img class="block__item-image" src="assets/images/slide-02.png" alt="" />
+                  <p class="block__item-content">белая клавиатура</p>
+                  <p class="block__item-header">Клавиатура Filum</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--variant">
+                  <img class="block__item-image" src="assets/images/slide-03.png" alt="" />
+                  <p class="block__item-content">4 разъема</p>
+                  <p class="block__item-header">Сетевой фильтр Filum</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--variant">
+                  <img class="block__item-image" src="assets/images/slide-01.png" alt="" />
+                  <p class="block__item-content">красное/черное кресло</p>
+                  <p class="block__item-header">Кресло Filum</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--variant">
+                  <img class="block__item-image" src="assets/images/slide-02.png" alt="" />
+                  <p class="block__item-content">белая клавиатура</p>
+                  <p class="block__item-header">Клавиатура Filum</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="block__item block__item--variant">
+                  <img class="block__item-image" src="assets/images/slide-03.png" alt="" />
+                  <p class="block__item-content">4 разъема</p>
+                  <p class="block__item-header">Сетевой фильтр Filum</p>
+                </div>
+              </div>
+            </div>
+            <div class="block__slider-buttons">
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+        <div class="block__footer before-lg">
+          <a href="#" class="block__button button button--second" style="width: max-content">Перейти к каталогу</a>
+        </div>
+      </section>
+      <section class="container registration" id="registration">
+        <div class="container__content registration__content">
+          <h2 class="registration__headline headline">Регистрация</h2>
+
+          <div class="registration__forms">
+            <form class="form" id="first-form" action="#">
+              <p class="form__headline">11 декабря</p>
+              <p class="form__description">Подарок спине: создаем эргономичное рабочее место за 10 минут</p>
+              <div class="form__wrapper">
+                <div class="form__inputs">
+                  <div class="form__item">
+                    <input type="text" class="form__input" placeholder="ФИО" name="name" value="" id="name" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+                  <div class="form__item">
+                    <input type="text" class="form__input" placeholder="Наименование организации" name="company" value="" id="company" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+                  <div class="form__item">
+                    <input type="number" class="form__input" placeholder="ИНН" name="taxId" value="" id="taxId" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+                  <div class="form__item">
+                    <input type="email" class="form__input" placeholder="E-mail" name="email" value="" id="email" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+
+                  <div class="form__item form__item--checkbox">
+                    <input type="checkbox" id="privacy-policy" name="privacy-policy" class="form__checkbox" checked />
+                    <label for="privacy-policy" class="form__checkbox-label">Согласие на прозвон</label>
+                    <div class="error-message" style="display: none"></div>
+                  </div>
+                </div>
+
+                <button type="submit" class="form__button button button--third">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+              </div>
+            </form>
+
+            <form class="form" id="second-form" action="#">
+              <p class="form__headline form__headline--description">18 декабря</p>
+              <p class="form__description">Новогодняя защита: как уберечь технику от скачков напряжения</p>
+              <div class="form__wrapper">
+                <div class="form__inputs">
+                  <div class="form__item">
+                    <input type="text" class="form__input" placeholder="ФИО" name="name" value="" id="name-startup" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+                  <div class="form__item">
+                    <input type="text" class="form__input" placeholder="Наименование организации" name="company" value="" id="company-startup" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+                  <div class="form__item">
+                    <input type="number" class="form__input" placeholder="ИНН" name="taxId" value="" id="taxId-startup" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+                  <div class="form__item">
+                    <input type="email" class="form__input" placeholder="E-mail" name="email" value="" id="email-startup" />
+                    <span class="form__required"><img src="assets/images/star.svg" alt="*" /></span>
+                  </div>
+
+                  <div class="form__item form__item--checkbox">
+                    <input type="checkbox" id="privacy-policy-startup" name="privacy-policy" class="form__checkbox" checked />
+                    <label for="privacy-policy-startup" class="form__checkbox-label">Согласие на прозвон</label>
+                    <div class="error-message" style="display: none"></div>
+                  </div>
+                </div>
+
+                <button type="submit" class="form__button button button--third">Предварительная регистрация</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="container hero hero--variant">
+        <div class="container__content hero__content">
+          <h1 class="headline hero__headline">
+            Становитесь <br />
+            <span class="second-font" style="margin: auto">диллером Filum </span><br />
+            Зарабатывайте с нами <br />
+            <span class="second-font" style="margin: auto">dealer@xcom.ru</span>
+          </h1>
+          <!-- <div class="hero__description">
                     <p>
                         <a href="#registration">
                             ПРИНЯть участие
@@ -486,58 +476,57 @@
                     </p>
 
                 </div> -->
-      </div>
-    </section>
+        </div>
+      </section>
+    </main>
+    <footer class="footer container" id="contacts">
+      <div class="footer__content container__content">
+        <a href="https://www.xcom.ru/" class="footer__logo">
+          <img class="logo footer__logo-img" src="./assets/images/logo-xcom.svg" alt="XCOM" />
+        </a>
 
-  </main>
-  <footer class="footer container" id="contacts">
-    <div class="footer__content container__content">
-      <a href="https://www.xcom.ru/" class="footer__logo">
-        <img class="logo footer__logo-img" src="./assets/images/logo-xcom.svg" alt="XCOM" />
-      </a>
-
-      <div class="footer__links">
-        <div class="footer__item">
-          <p class="footer__label">О компании</p>
-          <div class="footer__text">
-            <a href="#">История</a>
-            <a href="#">О компании</a>
-            <a href="#">About us</a>
-            <a href="#">Вакансии</a>
-            <a href="#">Акции</a>
-            <a href="#">Бизнес-акселератор X-Com</a>
-            <a href="#">Проекты</a>
-            <a href="#">Пресс-центр</a>
-            <a href="#">Статьи об импортозамещении</a>
+        <div class="footer__links">
+          <div class="footer__item">
+            <p class="footer__label">О компании</p>
+            <div class="footer__text">
+              <a href="#">История</a>
+              <a href="#">О компании</a>
+              <a href="#">About us</a>
+              <a href="#">Вакансии</a>
+              <a href="#">Акции</a>
+              <a href="#">Бизнес-акселератор X-Com</a>
+              <a href="#">Проекты</a>
+              <a href="#">Пресс-центр</a>
+              <a href="#">Статьи об импортозамещении</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer__links">
-        <div class="footer__item">
-          <p class="footer__label">Системная интеграция</p>
-          <div class="footer__text">
-            <a href="#">Монтаж и пусконакладка серверов</a>
-            <a href="#">Построение СХД и внедрение NAS-массивов под ключ</a>
-            <a href="#">Внедрение программного обеспечения под ключ</a>
-            <a href="#">Внедрение и сервис сетевого оборудования</a>
-            <a href="#">Внедрение офисных IP-ATC</a>
-            <a href="#">Оснащение и сервис рабочих мест</a>
-            <a href="#">Внедрение систем корпоративной печати</a>
-            <a href="#">Построение инженерных инфраструктур</a>
-            <a href="#">Внедрение и сервис систем безопасности</a>
-            <a href="#">Расчет, поставка, монтаж и обслуживание кабеленесущих систем</a>
-            <a href="#">Аутсорсинг информационной безопасности</a>
-            <a href="#">Мультимедийные решения для корпоративных коммуникаций</a>
+        <div class="footer__links">
+          <div class="footer__item">
+            <p class="footer__label">Системная интеграция</p>
+            <div class="footer__text">
+              <a href="#">Монтаж и пусконакладка серверов</a>
+              <a href="#">Построение СХД и внедрение NAS-массивов под ключ</a>
+              <a href="#">Внедрение программного обеспечения под ключ</a>
+              <a href="#">Внедрение и сервис сетевого оборудования</a>
+              <a href="#">Внедрение офисных IP-ATC</a>
+              <a href="#">Оснащение и сервис рабочих мест</a>
+              <a href="#">Внедрение систем корпоративной печати</a>
+              <a href="#">Построение инженерных инфраструктур</a>
+              <a href="#">Внедрение и сервис систем безопасности</a>
+              <a href="#">Расчет, поставка, монтаж и обслуживание кабеленесущих систем</a>
+              <a href="#">Аутсорсинг информационной безопасности</a>
+              <a href="#">Мультимедийные решения для корпоративных коммуникаций</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="footer__links">
-        <div class="footer__item">
-          <p class="footer__label">Мероприятия</p>
-          <div class="footer__text">
-            <!-- <p class="footer__sub-label">2024</p>
+        <div class="footer__links">
+          <div class="footer__item">
+            <p class="footer__label">Мероприятия</p>
+            <div class="footer__text">
+              <!-- <p class="footer__sub-label">2024</p>
               <a href="#">Вебинар X-Com и Катюша</a>
               <a href="#">Вебинар Видеорегистраторы TRASSIR</a>
               <a href="#">Бизнес-ужин X-Com совместно с IRBIS, Systeme Electric, IDS</a>
@@ -546,75 +535,73 @@
               <a href="#">Вебинар "Печать без границ: новый уровень экономии и качества"</a>
               <a href="#">Демо-день конкурса "Беспилотники: поможем взлететь Вашему бизнесу"</a> -->
 
-            <p class="footer__sub-label">2025</p>
-            <a href="#">Конференция "Цифровизация науки и образования"</a>
-            <a href="#">Вебинар "Обзор печатной техники российского производителя"</a>
-            <a href="#">Конференция "Интеграторы систем безопасности"</a>
-            <a href="#">Конференция "Pro-AV"</a>
-            <a href="#">Вебинар "Пилотные проекты российского софта"</a>
-            <a href="#">Конференция "Системы безопасности"</a>
+              <p class="footer__sub-label">2025</p>
+              <a href="#">Конференция "Цифровизация науки и образования"</a>
+              <a href="#">Вебинар "Обзор печатной техники российского производителя"</a>
+              <a href="#">Конференция "Интеграторы систем безопасности"</a>
+              <a href="#">Конференция "Pro-AV"</a>
+              <a href="#">Вебинар "Пилотные проекты российского софта"</a>
+              <a href="#">Конференция "Системы безопасности"</a>
+            </div>
           </div>
+        </div>
+
+        <div class="footer__links">
+          <div class="footer__item">
+            <p class="footer__label">Вебинары Filum</p>
+            <div class="footer__text">
+              <p class="footer__sub-label">2025</p>
+              <a href="#">Конференция "Цифровизация науки и образования"</a>
+              <a href="#">Вебинар "Обзор печатной техники российского производителя"</a>
+              <a href="#">Конференция "Интеграторы систем безопасности"</a>
+              <a href="#">Конференция "Pro-AV"</a>
+              <a href="#">Вебинар "Пилотные проекты российского софта"</a>
+              <a href="#">Конференция "Системы безопасности"</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__contacts">
+          <div class="footer__item">
+            <p class="footer__label">Контакты</p>
+            <div class="footer__text">
+              <span>+7 (495) 223-63-39 (Москва)</span>
+              <span>+7 (812) 740-11-20 (Санкт-Петербург)</span>
+              <span>Электронная почта: om@xcom.ru</span>
+            </div>
+          </div>
+          <div class="footer__social">
+            <div class="footer__icons">
+              <a href="#"><img src="./assets/images/tg.svg" alt="Telegram" /></a>
+              <a href="#"><img src="./assets/images/vk.svg" alt="VK" /></a>
+              <a href="#"><img src="./assets/images/mail.svg" alt="Mail" /></a>
+            </div>
+            <a href="#" class="footer__link">Политика конфиденциальности</a>
+          </div>
+        </div>
+
+        <div class="footer__copy">
+          <p class="footer__copy-text">Использование материалов, размещенных на сайте, допускается только с письменного разрешения «ООО М-ИНВЕСТ»</p>
+          <p class="footer__copy-text">2024 © «ООО М-ИНВЕСТ». Все права защищены.</p>
         </div>
       </div>
-
-      <div class="footer__links">
-        <div class="footer__item">
-          <p class="footer__label">Вебинары Filum</p>
-          <div class="footer__text">
-            <p class="footer__sub-label">2025</p>
-            <a href="#">Конференция "Цифровизация науки и образования"</a>
-            <a href="#">Вебинар "Обзор печатной техники российского производителя"</a>
-            <a href="#">Конференция "Интеграторы систем безопасности"</a>
-            <a href="#">Конференция "Pro-AV"</a>
-            <a href="#">Вебинар "Пилотные проекты российского софта"</a>
-            <a href="#">Конференция "Системы безопасности"</a>
-          </div>
+    </footer>
+    <div class="modal animate__animated" style="display: none">
+      <div class="modal__window animate__animated">
+        <div class="modal__close">
+          <span></span>
+          <span></span>
         </div>
-      </div>
-
-      <div class="footer__contacts">
-        <div class="footer__item">
-          <p class="footer__label">Контакты</p>
-          <div class="footer__text">
-            <span>+7 (495) 223-63-39 (Москва)</span>
-            <span>+7 (812) 740-11-20 (Санкт-Петербург)</span>
-            <span>Электронная почта: om@xcom.ru</span>
-          </div>
+        <div class="modal__content">
+          <p class="modal__headline"></p>
+          <p class="modal__text"></p>
+          <a class="modal__button button"> </a>
         </div>
-        <div class="footer__social">
-          <div class="footer__icons">
-            <a href="#"><img src="./assets/images/tg.svg" alt="Telegram" /></a>
-            <a href="#"><img src="./assets/images/vk.svg" alt="VK" /></a>
-            <a href="#"><img src="./assets/images/mail.svg" alt="Mail" /></a>
-          </div>
-          <a href="#" class="footer__link">Политика конфиденциальности</a>
-        </div>
-      </div>
-
-      <div class="footer__copy">
-        <p class="footer__copy-text">Использование материалов, размещенных на сайте, допускается только с письменного
-          разрешения «ООО М-ИНВЕСТ»</p>
-        <p class="footer__copy-text">2024 © «ООО М-ИНВЕСТ». Все права защищены.</p>
       </div>
     </div>
-  </footer>
-  <div class="modal animate__animated" style="display: none">
-    <div class="modal__window animate__animated">
-      <div class="modal__close">
-        <span></span>
-        <span></span>
-      </div>
-      <div class="modal__content">
-        <p class="modal__headline"></p>
-        <p class="modal__text"></p>
-        <a class="modal__button button"> </a>
-      </div>
-    </div>
-  </div>
 
-  <script src="assets/js/menu.js"></script>
-  <script src="assets/js/modal.js"></script>
-  <script src="assets/js/swiper.js"></script>
-</body>
-
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/modal.js"></script>
+    <script src="assets/js/swiper.js"></script>
+  </body>
 </html>
