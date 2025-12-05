@@ -558,11 +558,16 @@ li {
   flex-direction: column;
   gap: var(--size-sm);
   position: relative;
-  width: 10vw;
+  width: 100%;
 }
 .block__description--big {
   width: auto;
   flex: auto;
+}
+@media (min-width: 640px) {
+  .block__description {
+    width: 10vw;
+  }
 }
 .block__grid {
   display: none;
@@ -596,6 +601,27 @@ li {
     display: none;
   }
   .block__grid--charecter .block__item:nth-child(3)::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    inset: auto auto 100% 0;
+    height: 0;
+    padding-bottom: 56.25%;
+    transform: translateY(3%);
+    /* Соотношение сторон (например 16:9) */
+    background: url(./images/top-girl.png) center/cover no-repeat;
+    background-position: bottom;
+    z-index: 10;
+  }
+}
+@media (min-width: 1224px) {
+  .block__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .block__grid--charecter .block__item:nth-child(3)::after {
+    display: none;
+  }
+  .block__grid--charecter .block__item:nth-child(4)::after {
     content: "";
     position: absolute;
     width: 100%;
@@ -791,11 +817,18 @@ li {
 }
 .speakers__name {
   margin-top: var(--size-xl);
-  font-size: calc(8vw - (1vw + 1vh) * 0.35);
+  font-size: calc(7vw - (1vw + 1vh) * 0.35);
   font-family: Second, Main, Arial;
 }
 .speakers__content {
   counter-increment: number-counter;
+}
+.speakers__number {
+  font-size: var(--size-lg);
+  top: 1.7vw;
+  font-weight: bold;
+  color: var(--color-second);
+  margin-bottom: auto;
 }
 .speakers__description {
   margin-top: var(--size-lg);
@@ -807,19 +840,20 @@ li {
   font-weight: 700;
   line-height: 1.1;
   width: 100%;
-}
-.speakers__description::before {
-  content: "[" counter(number-counter) "]";
-  font-size: var(--size-lg);
-  top: 1.7vw;
-  font-weight: bold;
-  color: var(--color-second);
-  margin-bottom: auto;
+  position: relative;
 }
 @media (min-width: 1024px) {
   .speakers__description {
     margin-bottom: var(--size-xxxl);
   }
+}
+.speakers__description--small {
+  font-size: var(--size-sm);
+  margin: 0;
+  line-height: 1.2;
+}
+.speakers__description--small::before {
+  content: "";
 }
 .speakers__image {
   width: 100%;
@@ -846,6 +880,12 @@ li {
     /* Сохраняет пропорции */
     transform: translateX(-15%);
   }
+}
+.speakers__next-button {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: translateY(50%);
 }
 
 .registration__headline {

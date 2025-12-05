@@ -82,13 +82,18 @@
         flex-direction: column;
         gap: var(--size-sm);
         position: relative;
-        width: 10vw;
+        width: 100%;
+
         // flex: 1;
 
         &--big {
             //  margin-top:auto;
             width: auto;
             flex: auto;
+        }
+
+        @include sm {
+            width: 10vw;
         }
     }
 
@@ -124,6 +129,28 @@
             }
 
             &--charecter .block__item:nth-child(3)::after {
+                content: "";
+                position: absolute;
+                width: 100%;
+                inset: auto auto 100% 0;
+                height: 0;
+                padding-bottom: 56.25%;
+                transform: translateY(3%);
+                /* Соотношение сторон (например 16:9) */
+                background: url(./images/top-girl.png) center/cover no-repeat;
+                background-position: bottom;
+                z-index: 10;
+            }
+        }
+
+        @include lg {
+            grid-template-columns: repeat(4, 1fr);
+
+            &--charecter .block__item:nth-child(3)::after {
+                display: none;
+            }
+
+            &--charecter .block__item:nth-child(4)::after {
                 content: "";
                 position: absolute;
                 width: 100%;

@@ -22,12 +22,23 @@
 
     &__name {
         margin-top: var(--size-xl);
-        font-size: calc(8vw - ((1vw + 1vh) * 0.35));
+        font-size: calc(7vw - ((1vw + 1vh) * 0.35));
         font-family: Second, Main, Arial;
     }
 
     &__content {
         counter-increment: number-counter;
+    }
+
+    &__number {
+        font-size: var(--size-lg);
+        top: 1.7vw;
+
+        // position: absolute;
+        // left: 0;
+        font-weight: bold;
+        color: var(--color-second);
+        margin-bottom: auto;
     }
 
     &__description {
@@ -41,21 +52,22 @@
         font-weight: 700;
         line-height: 1.1;
         width: 100%;
+        position: relative;
 
-        &::before {
-            content: "[" counter(number-counter) "]";
-            font-size: var(--size-lg);
-            top: 1.7vw;
+        // &::before {
 
-            // position: absolute;
-            // left: 0;
-            font-weight: bold;
-            color: var(--color-second);
-            margin-bottom: auto;
-        }
+        // }
 
         @include md {
             margin-bottom: var(--size-xxxl);
+        }
+        &--small {
+            font-size: var(--size-sm);
+            margin: 0;
+            line-height: 1.2;
+            &::before {
+                content: "";
+            }
         }
     }
 
@@ -82,5 +94,12 @@
                 transform: translateX(-15%);
             }
         }
+    }
+
+    &__next-button {
+        position: absolute;
+        left: 0;
+        top: 100%;
+        transform: translateY(50%);
     }
 }
