@@ -560,14 +560,14 @@ li {
   position: relative;
   width: 100%;
 }
-.block__description--big {
-  width: auto;
-  flex: auto;
-}
 @media (min-width: 640px) {
   .block__description {
     width: 10vw;
   }
+}
+.block__description--big {
+  width: auto;
+  flex: auto;
 }
 .block__grid {
   display: none;

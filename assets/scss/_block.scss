@@ -85,15 +85,14 @@
         width: 100%;
 
         // flex: 1;
+        @include sm {
+            width: 10vw;
+        }
 
         &--big {
             //  margin-top:auto;
             width: auto;
             flex: auto;
-        }
-
-        @include sm {
-            width: 10vw;
         }
     }
 
